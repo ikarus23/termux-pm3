@@ -22,7 +22,7 @@
 function compile {
     if [ "$1" == "ignore-warnings" ]; then
         # Allow warnings (needed on Android 5.x, 7.x, not needed on 8.x).
-        echo "[*] Removing the -Werror flang from Makefiles"
+        echo "[*] Removing the -Werror flag from Makefiles"
         sed -i 's/-Werror //g' client/Makefile
         sed -i 's/-Werror //g' Makefile.host
         # Make the proxmark3 client.

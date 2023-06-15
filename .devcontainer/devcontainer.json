@@ -1,0 +1,234 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+	"name": "Debian",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:bookworm",
+	"features": {
+		"ghcr.io/devcontainers/features/anaconda:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/aws-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/azure-cli:1": {
+			"installBicep": true,
+			"version": "latest"
+		},
+		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+			"upgradePackages": true,
+			"packages": "curl,nano"
+		},
+		"ghcr.io/devcontainers-contrib/features/act:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/act-asdf:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/actionlint:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/activemq-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-contrib/features/age:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/age-keygen:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/akamai-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/alp-asdf:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/amplify-cli:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/ansible:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "17",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-contrib/features/apko:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
+			"clean_ppas": true,
+			"preserve_apt_list": true,
+			"force_ppas_on_non_ubuntu": true,
+			"packages": "curl,ca-certificates",
+			"ppas": "ppa:deadsnakes/ppa"
+		},
+		"ghcr.io/devcontainers-contrib/features/apt-packages:1": {
+			"clean_ppas": true,
+			"preserve_apt_list": true,
+			"packages": "htop",
+			"ppas": "ppa:deadsnakes/ppa"
+		},
+		"ghcr.io/devcontainers-contrib/features/argo-cd:1": {
+			"version": "2.5.0"
+		},
+		"ghcr.io/devcontainers-contrib/features/argo-workflows:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/asciidoctorj-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-contrib/features/asdf-package:1": {
+			"plugin": "act",
+			"version": "latest",
+			"pluginRepo": "https://github.com/grimoh/asdf-act.git",
+			"latestVersionPattern": "[0-9]"
+		},
+		"ghcr.io/devcontainers-contrib/features/assemblyscript:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/atlantis:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/atmos:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/auditjs:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/autoenv:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/aws-cdk:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/aws-eb-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/aztfexport:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/ballerina-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "8",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-contrib/features/bandit:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/bartib:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/bash-command:1": {
+			"command": "echo hi!"
+		},
+		"ghcr.io/devcontainers-contrib/features/beehive:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/bigcommerce-stencil-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/bikeshed:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/bin:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/bitwarden-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/black:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/bomber:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/boundary-asdf:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/bower:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/bpipe-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-contrib/features/brownie:2": {
+			"version": "latest",
+			"pythonVersion": "os-provided"
+		},
+		"ghcr.io/devcontainers-contrib/features/btm:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/jmeter-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-contrib/features/tomcat-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "17",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/dhoeric/features/act:1": {},
+		"ghcr.io/dhoeric/features/aztfy:1": {},
+		"ghcr.io/rchaganti/vsc-devcontainer-features/azurebicep:1": {},
+		"ghcr.io/customink/codespaces-features/sam-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/stuartleeks/dev-container-features/azure-cli-persistence:0": {},
+		"ghcr.io/saml-to/devcontainer-features/assume-aws-role:1": {},
+		"ghcr.io/edouard-lopez/devcontainer-features/bats:0": {
+			"version": "latest"
+		},
+		"ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {
+			"version": "latest"
+		},
+		"ghcr.io/astronomer/devcontainer-features/astro-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/eliises/devcontainer-features/bash-profile:1": {
+			"command": "alias k=kubectl",
+			"file": "/etc/bash.bashrc"
+		},
+		"ghcr.io/balazs23/devcontainers-features/bazel:1": {
+			"bazelisk": "latest"
+		},
+		"ghcr.io/akhildevelops/devcontainer-features/android-cli:0": {},
+		"ghcr.io/akhildevelops/devcontainer-features/apt:0": {},
+		"ghcr.io/jarrodcolburn/features/android-sdk:0": {
+			"emulator": true,
+			"platforms": "33",
+			"build-tools": "33.0.2"
+		},
+		"ghcr.io/flexwie/devcontainer-features/op:1": {},
+		"ghcr.io/wxw-matt/devcontainer-features/apt:0": {
+			"clean_cache": true,
+			"local_mirror": true
+		},
+		"ghcr.io/wxw-matt/devcontainer-features/command_runner:0": {},
+		"ghcr.io/wxw-matt/devcontainer-features/script_runner:0": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/bacon:0": {}
+	}
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
